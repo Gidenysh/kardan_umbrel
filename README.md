@@ -1,12 +1,12 @@
 # Fractal Bitcoin Solo Node — Umbrel Community App Store
 
-Запустите полноценный узел Fractal Bitcoin (FB) на Umbrel со встроенной панелью управления и RPC-эндпоинтом для соло-майнинга на алгоритме SHA-256.
+Run a full **Fractal Bitcoin (FB)** node on Umbrel with a built-in dashboard and RPC endpoint for solo SHA-256 mining.
 
 ---
 
 ## ✅ Correct File Structure
 
-Ваш репозиторий на GitHub должен иметь точно такую структуру:
+This is what your GitHub repo must look like **exactly**:
 
 ```
 your-repo/
@@ -29,32 +29,33 @@ your-repo/
 ---
 
 ## 🚀 How to Install on Umbrel
-# Step 1 — Put files on GitHub
 
-    Создайте новый публичный репозиторий на GitHub (например, my-umbrel-apps)
-    Загрузите все файлы из этого архива, соблюдая структуру выше
-    URL вашего репозитория будет: https://github.com/YOUR_USERNAME/my-umbrel-apps
-```
-    ⚠️ Critical naming rules Umbrel enforces:
+### Step 1 — Put files on GitHub
 
-        В umbrel-app-store.yml обязательно должно быть поле id: (например, id: fractal-store)
-        Имя папки приложения должно точно совпадать со значением id: в его umbrel-app.yml
-        Значение id: приложения должно иметь префикс id: стора — например, fractal-store-solo-node
-        icon.svg должен быть локальным файлом в папке приложения — удалённые URL не работают
-        Изображения галереи должны быть локальными файлами .jpg в папке приложения — не URL
-```
-# Step 2 — Add to Umbrel
+1. Create a **new public GitHub repository** (e.g. `my-umbrel-apps`)
+2. Upload **all files** from this zip exactly as structured above
+3. Your repo URL will be: `https://github.com/YOUR_USERNAME/my-umbrel-apps`
 
-    Откройте Umbrel → App Store
-    Прокрутите вниз → нажмите "Add Community App Store"
-    Вставьте URL вашего репозитория на GitHub → нажмите Add
-    Приложение "Fractal Bitcoin Node" появится в списке со своей иконкой
+> ⚠️ **Critical naming rules Umbrel enforces:**
+> - `umbrel-app-store.yml` must have an `id:` field (e.g. `id: fractal-store`)
+> - The app folder name **must exactly match** the `id:` in its `umbrel-app.yml`
+> - The app `id:` must be **prefixed** with the store `id:` — e.g. `fractal-store-solo-node`
+> - `icon.svg` must be a **local file** in the app folder — remote URLs don't work
+> - Gallery images must be **local `.jpg` files** in the app folder — not URLs
 
-# Step 3 — Install & configure
+### Step 2 — Add to Umbrel
 
-    Нажмите на приложение → Install
-    Дождитесь начальной синхронизации блокчейна (несколько часов)
-    Откройте панель управления по адресу http://umbrel.local:8380
+1. Open Umbrel → **App Store**
+2. Scroll to the bottom → click **"Add Community App Store"**
+3. Paste your GitHub repo URL → click **Add**
+4. The **"Fractal Bitcoin Node"** app will now appear with its icon
+
+### Step 3 — Install & configure
+
+1. Click the app → **Install**
+2. Wait for initial blockchain sync (several hours)
+3. Open the dashboard at `http://umbrel.local:8380`
+
 ---
 
 ## ⛏️ Connecting a Miner
