@@ -39,6 +39,7 @@ services:
       - ${APP_DATA_DIR}/bin:/opt/fractal
     environment:
       VERSION: "0.2.9rc2"
+      FRACTAL_RPC_PASS: "${APP_PASSWORD}"
     command: >
       bash -c "
         set -e
@@ -73,5 +74,3 @@ services:
           -maxconnections=25 \
           -prune=10000
       "
-    environment:
-      FRACTAL_RPC_PASS: "${APP_PASSWORD}"
