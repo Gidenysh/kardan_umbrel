@@ -34,7 +34,7 @@ your-repo/
     Создайте новый публичный репозиторий на GitHub (например, my-umbrel-apps)
     Загрузите все файлы из этого архива, соблюдая структуру выше
     URL вашего репозитория будет: https://github.com/YOUR_USERNAME/my-umbrel-apps
-
+```
     ⚠️ Critical naming rules Umbrel enforces:
 
         В umbrel-app-store.yml обязательно должно быть поле id: (например, id: fractal-store)
@@ -42,7 +42,7 @@ your-repo/
         Значение id: приложения должно иметь префикс id: стора — например, fractal-store-solo-node
         icon.svg должен быть локальным файлом в папке приложения — удалённые URL не работают
         Изображения галереи должны быть локальными файлами .jpg в папке приложения — не URL
-
+```
 # Step 2 — Add to Umbrel
 
     Откройте Umbrel → App Store
