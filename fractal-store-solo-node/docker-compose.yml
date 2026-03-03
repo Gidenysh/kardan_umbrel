@@ -20,6 +20,8 @@ services:
     command: node server.js
     volumes:
       - ${APP_DATA_DIR}/dashboard:/app:ro
+    ports:
+      - "3000:3000"
     environment:
       FRACTAL_RPC_HOST: fractal-store-solo-node_node_1
       FRACTAL_RPC_PORT: "10332"
@@ -37,6 +39,9 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_DATA_DIR}/bin:/opt/fractal
+    ports:
+      - "10332:10332"
+      - "8333:8333"
     environment:
       VERSION: "0.2.9rc2"
       FRACTAL_RPC_PASS: "${APP_PASSWORD}"
